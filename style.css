@@ -9,8 +9,8 @@
     --cream: #fef9f6;
     --text: #1a1f3a;
     --text-muted: #5a5f7a;
-    --link-active: #a66a6a;
-    --link-hover: #703c3c;
+    --link-active: #a85f5f;
+    --link-hover: #773535;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -109,7 +109,7 @@ body::before {
   padding: 1.5rem 3rem;
   line-height: 3em;
 }
-a.home-link:link, a.about-link:visited { color: var(--link-active); }
+a.home-link:link, a.home-link:visited { color: var(--link-active); }
 a.home-link:hover { color: var(--link-hover); }
 /* ── GALLERY ── */
 section { padding: 3rem 3rem; max-width: 1200px; margin: 0 auto; }
