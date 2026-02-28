@@ -1,4 +1,4 @@
-// Gallery 
+// Gallery Navigation
 const filterButtons = document.querySelectorAll(".filter-btn");
 const galleryItems = document.querySelectorAll(".gallery-item");
 
@@ -8,9 +8,8 @@ filterButtons.forEach((button) => {
     button.classList.add("active");
 
     const filterValue = button.dataset.filter;
-
     galleryItems.forEach((item) => {
-      if (filterValue === "all" || item.classList.contains(filterValue)) {
+      if (item.classList.contains(filterValue)) {
         item.classList.remove("hidden");
       } else {
         item.classList.add("hidden");
