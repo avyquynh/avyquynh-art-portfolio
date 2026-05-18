@@ -180,7 +180,8 @@ section { padding: 3rem 3rem; max-width: 1200px; margin: 0 auto; }
 }
 
 .vid-item iframe {
-  width: 525px;
+  width: 100%;
+  max-width: 525px;
   height: auto;
   aspect-ratio: 16 / 9;
   border-radius: 25px;
@@ -191,7 +192,27 @@ section { padding: 3rem 3rem; max-width: 1200px; margin: 0 auto; }
   line-height: 1.5em;
 }
 
-
+.vid-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.vid-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.vid-item {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.vid-item p {
+  overflow-wrap: break-word;
+}
 
 /* ── FOOTER ── */
 footer {
